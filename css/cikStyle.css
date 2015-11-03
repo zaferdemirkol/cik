@@ -1,0 +1,110 @@
+﻿body {
+    /*background-color:#E0E0E0;*/
+  background-color:#f8f7f3;   
+    font-family:'Courier New';
+}
+   body{margin:0;}
+
+        .CodeMirror {
+
+            float: left;
+            width: 50%;
+           /*border: 1px solid black;*/
+              height: 600px;
+              font-size:22px;
+              background-color: #CCFFE6;
+        }
+
+        iframe {
+            width: 49%;
+            float: left;
+            height: 600px;
+            /*border: 1px solid #CCFFFF;*/
+            /*border-left: 0px;*/
+            background-color:#FFCCE6;
+           
+              font-size:22px;
+        }
+
+        #preview {
+            font-size: large;
+        }
+        footer{
+          font-size:x-small;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;           
+            text-align: center;
+            box-shadow: 0 2px 10px 0px #777777, 0 -1px 0 rgba(255, 255, 255, 0.16) inset;
+  margin-bottom: 50px;
+  padding: 1.15em 10%;
+ display:block;
+
+        }
+        footer a {
+            text-decoration:none;
+        }
+
+        
+#menu a {
+  background: -webkit-linear-gradient( #3ba5cf, #157fa9);
+  background: linear-gradient( #3ba5cf, #157fa9);
+  box-shadow: 0 1px 1px #5eb5d7 inset, 0 -1px 1px #127095 inset;
+  border: 1px solid #127095;
+  border-bottom-color: #0f5a77;
+  border-radius: 6px;
+  color: white;
+  display: inline-block;
+  font-weight: 800;
+  /*margin: 0 auto 20px;*/
+  padding: .5em 0;
+  text-align: center;
+  width: 8em;
+  text-decoration:none;
+}
+
+
+
+
+
+       h1{
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+       }
+       #menu{
+           margin: 10px;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font-size:large;
+           text-decoration:none;
+           direction:rtl;
+
+       }
+
+
+
+       .page__header {
+  box-shadow: 0 2px 10px 0px #777777, 0 -1px 0 rgba(255, 255, 255, 0.16) inset;
+  background-color: #1382ad;
+  border-bottom: 1px solid #006186;
+  margin-bottom: 10px;
+  padding: 1.15em 10%;
+  text-align: center;
+}
+.page__header p {
+  margin-bottom: 0;
+}
+
+
+
+.page__title {
+  color: #fff;
+}
+
+.page__title {
+font-family: 'Bubblegum Sans', cursive;
+  font-size: 2.50em;
+  font-weight: normal;
+  left: -28px;
+  line-height: 1em;
+  margin-bottom: .25em;
+  position: relative;
+  text-shadow: 0 -1px 0 #006186;
+}
+

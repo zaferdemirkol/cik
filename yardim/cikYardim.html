@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Çocuklar için Kodlama CiK-Zafer Demirkol</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="çocuklar için kodlama, çocuklar için programlama, kodlama, editör, çocuklar için kütüphane, kodlama temelleri, CiK kütüphane, Oyanayarak kodlama, oynayarak programlama, Türkçe kod editörü ">
+    <meta name="description" content="CiK çocuklar için geliştirilmiş bir kodlama kütüphanesidir. Türkçe kod arabirimleriyle programlama-kodlamayı kolay öğrenilebilir hale getirmek amaçlı oluşturulmuştur.">
+    <meta name="copyright" content="Çocuklar için Kodlama CiK kütüphanesi Zafer Demirkol tarafından geliştirilmiş olup bütün hakları Zafer Demirkol a aittir">
+    <link href='https://fonts.googleapis.com/css?family=Dosis|Nunito|Karla|Sigmar+One|Righteous|Chewy|Permanent+Marker|Fredoka+One|Bubblegum+Sans' rel='stylesheet' type='text/css'>
+    <link href="stil.css" rel="stylesheet" />
+
+
+    <link href="menu.css" rel="stylesheet" />
+    <style>
+        footer {
+            font-size: x-small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            box-shadow: 0 2px 10px 0px #777777, 0 -1px 0 rgba(255, 255, 255, 0.16) inset;
+            margin-bottom: 50px;
+            padding: 1.15em 10%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul id="nav">
+        <li class="current"><a href="#icerik">Hakkında</a></li>
+        <li><a href="#offline">Bağlantısız çalışma</a></li>
+        <li><a href="#dosya">Dosya Yapısı</a></li>
+        <li><a href="#editor">Editör</a></li>
+        <li><a href="#metot">Metot Yapısı</a></li>
+        <li><a href="#ozellik">Özellik Yapısı</a></li>
+        <li><a href="#metotlar">Metotlar</a></li>
+        <li><a href="#cizimmetotlari">Çizim Metotları</a></li>
+        <li><a href="#dikdortgen">Dikdörtgen Nesnesi</a></li>
+     <li><a href="#daire">Daire Nesnesi</a></li>
+        <li><a href="#yildiz">Yıldız Nesnesi</a></li>
+        <li><a href="#cokgen">Çokgen Nesnesi</a></li>
+        <li><a href="#resim">Resim Metotları</a></li>
+    </ul>
+
+    <header class="page__header" role="banner">
+        <div class="page__title">Çocuklar için Kodlama Kütüphanesi CiP Yardım</div>
+    </header>
+
+
+    <div id="icerik" class="post__article">
+      
+            Çocuklar için Kodlama Kütüphanesi 7- 18 yaş arası çocuklar için kodlama temel kavramlarına ve yazım biçimlerine  alışması için geliştirilmiştir. <p />
+            Bu amaçla program arabirimleri Türkçedir ve kütüphaneyi kullanmak için
+            bir editör arabirimi sunulmuştur (Oyun alanı).  Bu editör sayesinde öğrenci komutlarını verebilecek
+            ve sonuçlarını anında görebilecektir. Komutlar günümüzde yaygın olarak kullanılan programlama dillerinin nesneye yönelik  yapısı ve noktasal notasyon yazım biçimine uygun olarak oluşturulmuştur. Bu yapısı sayesinde, öğrenci burada öğrendiği yöntemlerle kolayca profesyonel bir dil yapısına geçebilir ve onu hızlıca öğrenebilecek bir alt yapıya sahip olabilir.
+            <p></p>
+        <h2 id="offline">İnternet'e Bağlı olmadan (offline çalışma)</h2>
+        CiK kütüphanesiyle <a href="http://www.cocuklaricinkodlama.com/cik">http://www.cocuklaricinkodlama.com/cik</a> adresinden online çalışabilirsiniz. Eğer internet bağlantınız yoksa veya offline çalışmak istiyorsanız, indirdiğiniz cik.zip dosyasını bilgisayarınızda bir klasöre açınız. Daha sonra index.html dosyasına çift tılayarak CiK Editörünü açıp çalışmaya başlayabilirsiniz.
+        <p></p>
+        <h2 id="dosya">CiK Dosya Yapısı</h2>
+        CiK Ana kütüphanesi ve yardımcı kütüphaneleriyle pek çok kod dosyasından oluşur. Ana kütüphane ismi cik.js dir.  CiK dosya ve klasör yapısı şöyledir:
+        
+
+        <figure>
+            <img src="images/01a.png" />
+            <figcaption><strong>Cik Dosya Yapısı</strong></figcaption>
+        </figure>
+
+        <p></p>
+            <h2 id="editor">Editör (Oyun Alanı)</h2>
+
+            CiK için bir editör'de geliştirilmiştir, kodları yazıp değişik sonuçlarını görülebildiği bir arabirim olan editöre oyun alanı da diyebiliriz. Editör iki kısımdan oluşmaktadır:<br />
+            1-Kodların yazıldığı ilk bölüm<br />
+            2-Sonucun görüldüğü ikinci bölüm<p></p>
+            <figure>
+                <img src="images/01.png" />
+                <figcaption><strong>Cik Editör</strong></figcaption>
+            </figure>
+            <p></p>
+            Editöre ayrıca akıllı algılama özelliği eklenmiştir. Buna göre herhangi bir komuttan sonra nokta konduğu anda olabilecek metot (işlem)
+            ve özellikler  öğrenciye sunulmaktadır.(İfadeyi yazdıktan sonra noktayı koymadan kısa bir süre beklemek gerekebilir)
+
+            <figure>
+                <img src="images/04.png" />
+                <figcaption><strong>Akıllı algılama</strong></figcaption>
+            </figure>
+            <p></p>
+            <h2 id="metot">Metotlar</h2>
+
+            CiK kütüphanesi bütün üst düzey programlama dillerinde oluğu gibi Metot ve Özelliklerden (Properties) oluşmuştur. Metotlar programlamada "eylem gerçekleştiren" kod yapılarıdır.
+            Sayfaya yazı yazdırmak, resim eklemek vs... Birer metottur çünkü bir eylemi gerçekleştirmektedirler. CiK de metotlar akıllı kod tamamlamada
+            <img src="images/02.png" /> ikonu ile gösterilir.
+            Bazı metotlar parantez içinde gönderdiğiniz "parametreler" ile çalıştırılırlar.
+
+            <figure>
+                <img src="images/04a.png" />
+                <figcaption><strong>Metotların Kullanımı</strong></figcaption>
+            </figure>
+            <p></p>
+            Bazı metotlara parametre değeri atamak zorunlu değildir. Parametrelerin atanmadığı durumlarda tanımlı parametre değerleri kullanılır:
+            <figure>
+                <img src="images/06.png" />
+                <figcaption><strong>Parametresiz Metot Kullanımı</strong></figcaption>
+            </figure>
+            <p></p>
+
+            Dilerseniz parametreler göndererek tanımlı değerleri değiştirebilirsiniz:
+            <figure>
+                <img src="images/07.png" />
+                <figcaption><strong>Parametre Kullanımı</strong></figcaption>
+            </figure>
+            <p></p>
+
+            <h2 id="ozellik">Özellikler</h2>
+            Özellikler, bir program nesnesine değer atamak için kullanılır. Özellikler sayesinde bir program nesnesine renk, uzunluk, yükseklik gibi değerler atanır. Her nesnenin kendine ait özellikleri vardır, bu özelliklerin neler olduğunu  dökümanın ilerliyen kısımlarında bulabilirsiniz. Ayrıca her nesneye ait bütün özellikler akıllı kod tamamlamada kullanıcıya sunulmuştur. Özelliklere ait akıllı kod tamamlama ikonu :
+            <img src="images/03.png" /> şeklindedir.
+            Bir nesneye özellik atama "=" operatörü ile yapılır:
+
+            <figure>
+                <img src="images/05.png" />
+                <figcaption><strong>Özellik Değer Atama</strong></figcaption>
+            </figure>
+            <p></p>
+
+            <h3>Zincirleme Metotlar</h3>
+            CiK'de zincirleme metot yapıları da vardır. Buna göre bir metodu takip eden (noktadan sonra diğer bir metot) metod yapıları da kullanılmaktadır:
+
+            <figure>
+                <img src="images/08.png" />
+                <figcaption><strong>Zincirleme Metot Kullanımı</strong></figcaption>
+            </figure>
+            <p></p>
+
+            <h1>CiK API </h1>
+            API'ler programsal arabirimlerdir. API ler sayesinde kullanıcı, kütüphaneye ulaşır ve onu kullanır. CiK teki API ler yukarıda da açıklandığı gibi ağırlıklı olarak Metot ve Özelliklerden oluşuyor. Ana arabirim "cik" dik. Bütün ifadeler, "cik" ile başlar ve noktasal notasyonla diğer metot ve özelliklere erişilir. Aşağıdaki bölümlerde CiK deki metot ve özelliklerin tamamı verilmektedir ayrıca bunların kullanımları da anlatılmıştır. CiK kütüphanesi halen geliştirilme aşamasında olup bu metot ve özelliklere zaman içinde ilaveler yapılacaktır.
+
+
+
+            <h2 id="metotlar">CiK Metotları</h2>
+
+            <strong><code>  cik.yaz("yazdırmak istediğiniz metin")</code> </strong>
+            <figure>
+                <img src="images/09.png" />
+                <figcaption><strong>  </strong></figcaption>
+            </figure>
+            <p></p>
+            <strong><code>     cik.tekrarla(tekrarSayısı, Metot)</code> </strong>  <br />
+            "tekrarla" metodu bir döngü ifadesidir. İki parametre almaktadır.<br />
+            tekrarSayısı: Sayısal Değer<br />
+            Metot: Bir CiK metodu (Çift tırnak içinde yazılmalı)<br />
+
+            Girilen tekrarSayısı kadar ikinci parametredeki metot çalıştırılır:
+
+            <figure>
+                <img src="images/10.png" />
+                <figcaption><strong>  </strong></figcaption>
+            </figure>
+            <p></p>
+            <strong><code>     cik.eğer(koşulİfadesi, Metot)</code> </strong>  <br />
+            koşulİfadesi: <,>
+                , == , !=  karşılaştırma ifadeleri ("=="  eşit ise "!=" eşit değilse)<br />
+                Metod: Koşulun olumlanması durumunda çalıştırılacak CiK Metodu (çift tırnak içinde yazılır)<br />
+                <figure>
+                    <img src="images/11.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+                <strong><code>    cik.yardım()</code> </strong>  <br />
+                Şu an okuduğunuz yardım sayfasını açar. Bir popup pencere olduğu için browser'ınızdan popup pencere açılması iznini vermeniz gerekir. Adres çubuğunun üzerinde popup olduğunu belirten bir ifade göreceksiniz buraya tıklayarak izin verebilirsiniz.
+
+                              <figure>
+                                  <img src="images/05a.png" />
+                                  <figcaption><strong> Yardım penceresi engelinin kaldırılması </strong></figcaption>
+                              </figure>
+                <figure>
+                    <img src="images/12.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+
+
+                <h2 id="cizimmetotlari">Çizim Metotları</h2>
+
+                <strong><code> cik.git.başlangıç(yatayUzaklık,dikeyUzaklık)   </code> </strong>  <br />
+
+                İmleci (cursor) Yatay ve Dikey pozisyonlarda konumlandırır.  Çizim için bir başlangıç noktası oluşturur. Devamında çizim metotları tanımlanır.
+
+
+                <figure>
+                    <img src="images/13.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+                <code>     cik.git.başlangıç(yatayUzaklık,dikeyUzaklık).<strong>sağ(çizgiUzunluğu) </strong> </code>   <br />
+                çizgiUzunluğu:sayısal değer<br />
+                "sağ" metodu çizim yönünü belirtir ve  "git.başlangıç(yatayUzaklık,dikeyUzaklık)" metodunun devamında  zincirleme olarak kullanılır. Bakış açımıza göre sağ tarafa parametrede belirtilen uzunluk kadar bir çizgi çizer.
+
+                <figure>
+                    <img src="images/14.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+                <code>     cik.git.başlangıç(yatayUzaklık,dikeyUzaklık).<strong>sol(çizgiUzunluğu) </strong> </code>   <br />
+                çizgiUzunluğu:sayısal değer<br />
+                "sol" metodu çizim yönünü belirtir ve  "git.başlangıç(yatayUzaklık,dikeyUzaklık)" metodunun devamında  zincirleme olarak kullanılır. Bakış açımıza göre sol tarafa parametrede belirtilen uzunluk kadar bir çizgi çizer.
+
+                <figure>
+                    <img src="images/15.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+
+                <code>     cik.git.başlangıç(yatayUzaklık,dikeyUzaklık).<strong>aşağı(çizgiUzunluğu) </strong> </code>   <br />
+                çizgiUzunluğu:sayısal değer<br />
+                "aşağı" metodu çizim yönünü belirtir ve  "git.başlangıç(yatayUzaklık,dikeyUzaklık)" metodunun devamında  zincirleme olarak kullanılır. Bakış açımıza göre aşağı tarafa parametrede belirtilen uzunluk kadar bir çizgi çizer.
+
+                <figure>
+                    <img src="images/16.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+
+                <code>     cik.git.başlangıç(yatayUzaklık,dikeyUzaklık).<strong>yukarı(çizgiUzunluğu) </strong> </code>   <br />
+                çizgiUzunluğu:sayısal değer<br />
+                "yukarı" metodu çizim yönünü belirtir ve  "git.başlangıç(yatayUzaklık,dikeyUzaklık)" metodunun devamında  zincirleme olarak kullanılır. Bakış açımıza göre yukarı tarafa parametrede belirtilen uzunluk kadar bir çizgi çizer.
+
+                <figure>
+                    <img src="images/17.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+
+                <h3>Çizim için Zincirleme Metot Kullanımı</h3>
+                Yukarıdaki çizim metotlarını noktasal notasyonla zincirleme yazarak, kompleks çizimler oluşturabilirsiniz:
+
+                <figure>
+                    <img src="images/19.png" />
+                    <figcaption><strong>  </strong></figcaption>
+                </figure>
+                <p></p>
+
+                <h1>CiK Nesneleri</h1>
+                CiK kütüphanesi "dikdörtgen", "daire", "çokgen", "yıldız" gibi bir tanım nesnelerden oluşmuştur.
+                Bu nesneler kütüphane geliştikçe daha da artacaktır. Nesneler "kenar uzunluğu", "renk"  vb. gibi "özelliklere"  sahiptir.  Özelliklere Değer atayarak nesnelerimizin yapılarını değiştirebiliriz. Herhangi bir değer atanmadığı durumlarda "tanımlı" değerleri ile gösterilirler. Nesnelerimiz ayrıc "çiz" isminde metoda da sahiptir. Bu metot nesnelerimizin çizilmesi komutunu verir.
+
+                <h2 id="dikdortgen">Dikdörtgen Nesnesi</h2>
+                <h3>Özellikleri</h3>
+                <ul>
+                    <li>yatayUzaklık</li>
+                    <li>dikeyUzaklık</li>
+                    <li>genişlik</li>
+                    <li>yükseklik</li>
+                    <li>renk</li>
+                </ul>
+                <h3>Metodu</h3>
+                <ul>
+                    <li>çiz()</li>
+                </ul>
+                <h2>Kullanımı</h2>
+                <code>
+                    <pre>
+cik.dikdörtgen.yatayUzaklık= 200
+cik.dikdörtgen.dikeyUzaklık= 100
+cik.dikdörtgen.genişlik=300
+cik.dikdörtgen.yükseklik=200
+cik.dikdörtgen.renk="#008b00"
+cik.dikdörtgen.çiz()
+</pre>
+                </code>
+
+                <figure>
+                    <img src="images/20a.png" />
+                    <figcaption><strong>Dikdörtgen Nesnesinin Tanımlı (Default) Kullanımı  </strong></figcaption>
+                </figure>
+
+
+                <figure>
+                    <img src="images/20.png" />
+                    <figcaption><strong>Dikdörtgen Nesnesinin Özellikleri ve Metodu  </strong></figcaption>
+                </figure>
+                <p></p>
+
+
+
+                <h2 id="daire">Daire Nesnesi</h2>
+                <h3>Özellikleri</h3>
+                <ul>
+                    <li>yatayUzaklık</li>
+                    <li>dikeyUzaklık</li>
+                    <li>yarıçap</li>
+
+                    <li>renk</li>
+                </ul>
+                <h3>Metodu</h3>
+                <ul>
+                    <li>çiz()</li>
+                </ul>
+                <h2>Kullanımı</h2>
+                <code>
+                    <pre>
+cik.daire.yatayUzaklık=120
+cik.daire.dikeyUzaklık=150
+cik.daire.yarıçap=100
+cik.daire.renk="#00688b"
+cik.daire.çiz()
+</pre>
+                </code>
+
+                <figure>
+                    <img src="images/21a.png" />
+                    <figcaption><strong>Daire Nesnesinin Tanımlı (Default) Kullanımı  </strong></figcaption>
+                </figure>
+
+
+                <figure>
+                    <img src="images/21.png" />
+                    <figcaption><strong>Daire Nesnesinin Özellikleri ve Metodu  </strong></figcaption>
+                </figure>
+                <p></p>
+
+
+
+
+                <h2 id="yildiz">Yıldız Nesnesi</h2>
+                <h3>Özellikleri</h3>
+                <ul>
+                    <li>yatayUzaklık</li>
+                    <li>dikeyUzaklık</li>
+                    <li>uçSayısı</li>
+                    <li>renk</li>
+                </ul>
+                <h3>Metodu</h3>
+                <ul>
+                    <li>çiz()</li>
+                </ul>
+                <h2>Kullanımı</h2>
+                <code>
+                    <pre>
+cik.yıldız.yatayUzaklık=120
+cik.yıldız.dikeyUzaklık=100
+cik.yıldız.uçSayısı=8
+cik.yıldız.renk="#00688b"
+cik.yıldız.çiz()
+</pre>
+                </code>
+
+                <figure>
+                    <img src="images/22a.png" />
+                    <figcaption><strong>Yıldız Nesnesinin Tanımlı (Default) Kullanımı  </strong></figcaption>
+                </figure>
+
+
+                <figure>
+                    <img src="images/22.png" />
+                    <figcaption><strong>Yıldız Nesnesinin Özellikleri ve Metodu  </strong></figcaption>
+                </figure>
+                <p></p>
+
+                <h2 id="cokgen">Çokgen Nesnesi</h2>
+                <h3>Özellikleri</h3>
+                <ul>
+                    <li>yatayUzaklık</li>
+                    <li>dikeyUzaklık</li>
+                    <li>kenarSayısı</li>
+                    <li>kenarUzunluğu</li>
+                    <li>renk</li>
+                </ul>
+                <h3>Metodu</h3>
+                <ul>
+                    <li>çiz()</li>
+                </ul>
+                <h2>Kullanımı</h2>
+                <code>
+                    <pre>
+cik.çokgen.yatayUzaklık=130
+cik.çokgen.dikeyUzaklık=120
+cik.çokgen.kenarSayısı=9
+cik.çokgen.kenarUzunluğu=110
+cik.çokgen.renk="#7cfc00"
+cik.çokgen.çiz()
+</pre>
+                </code>
+
+                <figure>
+                    <img src="images/23a.png" />
+                    <figcaption><strong>Çokgen Nesnesinin Tanımlı (Default) Kullanımı  </strong></figcaption>
+                </figure>
+
+
+                <figure>
+                    <img src="images/23.png" />
+                    <figcaption><strong>Çokgen Nesnesinin Özellikleri ve Metodu  </strong></figcaption>
+                </figure>
+                <p></p>
+
+
+                <h2 id="resim">Resim Metotları</h2>
+                CiK kütüphanesinde tanımlı resimler bulunmaktadır. Zaman içinde bu resimlerin sayısı artacaktır. Resimler sayfaya metotlar sayesinde eklenir. Bu metotlara "cik.resim." yazarak erişilir. Metot isimleri aynı zamanda resimlerin isimleridir. Resim metotları 2 adet parametre alır. Bu parametreler resmin sayfanın yatay ve dikeyden uzunluğunu belirtir. Eğer parametreler belirtilmemişse tanımlı değerleriyle gösterilir:
+                <figure>
+                    <img src="images/24.png" />
+                    <figcaption><strong>Resim Metotlarının Kullanımı </strong></figcaption>
+                </figure>
+
+                Şimdilik aşağıdaki resimler tanımlanmıştır ancak zaman içinde kütüphanedeki resim sayısı arttırılacaktır:
+
+                <code>
+                    <pre>
+cik.resim.balık()
+cik.resim.köpek()
+cik.resim.kedi()
+cik.resim.penguen()
+cik.resim.gemi()
+cik.resim.tramvay()
+cik.resim.karavan()
+cik.resim.okulOtobüsü()
+cik.resim.elma()
+cik.resim.limon()
+cik.resim.portakal()
+           
+ <!--cik.resim.balık(10,10)
+cik.resim.köpek(60,10)
+cik.resim.kedi(280,10)
+cik.resim.penguen(450,10)
+cik.resim.gemi(510,160)
+cik.resim.tramvay(50,160)
+cik.resim.karavan(150,160)
+cik.resim.okulOtobüsü(260,160)
+cik.resim.elma(60,260)
+cik.resim.limon(260,260)
+cik.resim.portakal(360,260)-->
+</pre>
+                </code>
+
+
+                <figure>
+                    <img src="images/25.png" />
+                    <figcaption><strong>Resimlerin Topluca Görünümü </strong></figcaption>
+                </figure>
+
+</div>
+
+
+    <footer><a href="cikLisans.html">Zafer Demirkol &copy; 2015 Tüm hakları saklıdır. </a><br /> <a href="http://www.zaferdemirkol.com" target="_blank">www.zaferdemirkol.com</a>  </footer>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+  
+    <script src="js/jquery.nav.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#nav').onePageNav();
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Çocuklar için Kodlama CiK-Zafer Demirkol</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="çocuklar için kodlama, çocuklar için programlama, kodlama, editör, çocuklar için kütüphane, kodlama temelleri, CiK kütüphane, Oyanayarak kodlama, oynayarak programlama, Türkçe kod editörü ">
+    <meta name="description" content="CiK çocuklar için geliştirilmiş bir kodlama kütüphanesidir. Türkçe kod arabirimleriyle programlama-kodlamayı kolay öğrenilebilir hale getirmek amaçlı oluşturulmuştur.">
+    <meta name="copyright" content="Çocuklar için Kodlama CiK kütüphanesi Zafer Demirkol tarafından geliştirilmiş olup bütün hakları Zafer Demirkol a aittir">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="codemirror/codemirror.css" rel="stylesheet" />
+    <script src="codemirror/codemirror.js"></script>
+
+    <script src="webIntellisense/webintellisense.js"></script>
+    <script src="webIntellisense/webintellisense-codemirror.js"></script>
+    <link href="webIntellisense/webintellisense.css" rel="stylesheet" />
+    <link href="webIntellisense/webintellisenseKullaniciDuzenlemesi.css" rel="stylesheet" />
+    <script src="webIntellisense/kodTamamlama.js"></script>
+
+    <link href="css/cikStyle.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Dosis|Nunito|Karla|Sigmar+One|Righteous|Chewy|Permanent+Marker|Fredoka+One|Bubblegum+Sans' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+<body>
+    <header class="page__header" role="banner">
+        <div class="page__title">  Çocuklar için Kodlama (CiK) v0.1.1 <img width="32" height="48" src="images/favicon.png" /> -  Oyun Alanı     </div>
+    </header>
+    <article>
+
+
+        <div id="menu">
+
+            <a href="yardim/cikYardim.html" target="_blank">Yardım</a>
+            <a href="yardim/cikHakkinda.html" target="_blank">Hakkında</a>
+
+        </div>
+
+        <textarea id=code name=code>
+ cik.yaz("Merhaba Cik kütüphanesine hoş geldiniz")
+
+        </textarea>
+
+        <iframe frameborder="0" name="cerceve" id="preview"></iframe>
+        <script>
+            var delay;
+
+
+
+
+            var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+                mode: 'text/html',
+                lineNumbers: true
+            });
+            editor.on("change", function () {
+
+
+
+
+                var cur = editor.getCursor();
+
+                satirIcerik = editor.getLine(cur.line);
+
+                //satirIcerik = editor.getLine(5);
+                console.log(satirIcerik);
+                clearTimeout(delay);
+                delay = setTimeout(updatePreview, 300);
+            });
+
+            editor.on("keyup", function (a, event) {
+
+                console.log(event.keyCode);
+
+                if (event.keyCode == 27 || event.keyCode == 13) {
+                    intellisense = null;
+
+
+                }
+
+
+            });
+
+            function updatePreview() {
+
+
+                if ((navigator.userAgent.match(/iPhone/i)) ||
+ (navigator.userAgent.match(/iPod/i)) ||
+ (navigator.userAgent.match(/iPad/i)) ||
+ (navigator.userAgent.match(/android/i))) {
+                }
+                else
+                { kodTamamlama(); }
+
+                
+
+                var previewFrame = document.getElementById('preview');
+                var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+
+
+
+                preview.open();
+
+
+                var icerik = '<div id="icerik"></div><canvas id="Canvas" width="700" height="500" ></canvas> <br />   <script src="cik.js"><\/script>  <script>' + editor.getValue() + '<\/script>';
+
+
+                preview.write(icerik);
+                preview.close();
+            }
+            setTimeout(updatePreview, 300);
+        </script>
+
+
+    </article>
+
+
+
+    <footer><a href="yardim/cikLisans.html">Zafer Demirkol &copy; 2015 Tüm hakları saklıdır. </a><br /> <a href="http://www.zaferdemirkol.com" target="_blank">www.zaferdemirkol.com</a>  </footer>
+</body>
+</html>

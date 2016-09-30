@@ -14,6 +14,19 @@ window.cik = (function () {
     var yukseklik;
     var ileriX;
     var ileriY;
+    var renkler = {
+        'kırmızı': 'red',
+        'turuncu': 'orange',
+        'siyah': 'black',
+        'mavi': 'blue',
+        'yeşil': 'green',
+        'sarı': 'yellow',
+        'beyaz': 'white',
+        'pembe': 'pink',
+        'gri': 'gray',
+        'mor': 'purple',
+        'kahverengi': 'brown'
+    };
 
 
     function CIK(els) {
@@ -39,6 +52,10 @@ window.cik = (function () {
        
         ctx.lineTo(ileriX, t);
         ctx.stroke();
+    }
+
+    function renkKodunuAl(renk) {
+        return renkler[renk.toLowerCase()] ? renkler[renk.toLowerCase()] : renk;
     }
 
     var cik = {
@@ -98,9 +115,9 @@ window.cik = (function () {
             renk: "#FF0000",
 
             çiz: function () {
-                ctx.beginPath();               
-                ctx.fillRect(this.yatayUzaklık, this.dikeyUzaklık, this.genişlik, this.yükseklik);
-                ctx.fillStyle = this.renk;
+                ctx.beginPath();
+                ctx.rect(this.yatayUzaklık, this.dikeyUzaklık, this.genişlik, this.yükseklik);
+                ctx.fillStyle = renkKodunuAl(this.renk.toLowerCase());
                 ctx.fill();
                 ctx.stroke();
             }
@@ -114,7 +131,7 @@ window.cik = (function () {
             çiz: function () {
                 ctx.beginPath();               
                 ctx.arc(this.yatayUzaklık, this.dikeyUzaklık, this.yarıçap, 0, 2 * Math.PI);
-                ctx.fillStyle = this.renk;
+                ctx.fillStyle = renkKodunuAl(this.renk.toLowerCase());
                 ctx.fill();
                 ctx.stroke();
 
@@ -160,7 +177,7 @@ window.cik = (function () {
                 ctx.lineWidth = 5;
                 ctx.strokeStyle = 'red';
                 ctx.stroke();
-                ctx.fillStyle = this.renk;
+                ctx.fillStyle = renkKodunuAl(this.renk.toLowerCase());
                 ctx.fill();
 
 
@@ -189,7 +206,7 @@ window.cik = (function () {
                 ctx.lineWidth = 3;
                 ctx.stroke();
 
-                ctx.fillStyle = this.renk;
+                ctx.fillStyle = renkKodunuAl(this.renk.toLowerCase());
                 ctx.fill();
 
 
